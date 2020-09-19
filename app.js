@@ -81,7 +81,7 @@ app.get("/", (req, res, next) => {
 app.post("/login", (req, res, next) => {
   if (!!users[req.body.user] && users[req.body.user] === req.body.password) {
     req.session.user = req.body.user;
-    if (!req.session.calls) req.session.calls = 1;
+    if (!req.session.calls) req.session.calls = 0;
     res.sendStatus(200);
   } else {
     req.session.destroy();
