@@ -5,6 +5,6 @@ simple express https srv with auth and sessions/cookies stored on MongoDB
 - POST /data - storing some data [passing generic object]
 - GET /session - get session info and data
 
-try it on https://giona.sytes.net
+try it on https://api.giona.tech
 
-- example POST call https://giona.sytes.net/login passing {"user": "test", "password": "test"} => then GET call https://giona.sytes.net/session
+- example POST call https://api.giona.tech/login passing {"user": "test", "password": "test"} => then GET call https://api.giona.tech/session
